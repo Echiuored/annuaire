@@ -1,16 +1,20 @@
 <?php
 
 session_start();
+
 require 'config/database.php';
 
 $message = '';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST')
 {
-    $login = $_POST['login'];
-    $motdepasse = $_POST['motdepasse'];
+    $login = trim($_POST['login']);
+    $motdepasse = trim($_POST['motdepasse']);
 
-    $sql = $pdo->prepare("SELECT * FROM utilisateurs WHERE login = ?");
+    $sql = $pdo->prepare(
+        "SELECT * FROM utilisateurs WHERE login = ?"
+    );
+
     $sql->execute([$login]);
 
     $user = $sql->fetch();
@@ -27,20 +31,54 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST')
         $message = "Identifiant ou mot de passe incorrect";
     }
 }
+
+include 'includes/header.php';
 ?>
 
-<h2>Connexion</h2>
+<div class="login-container">
 
-<form method="post">
+    <div class="login-box">
 
-    <input type="text" name="login" placeholder="Login"><br><br>
+        <h1>Annuaire du Personnel</h1>
 
-    <input type="password" name="motdepasse" placeholder="Mot de passe"><br><br>
+        <form method="post">
 
-    <button>Se connecter</button>
+            <div class="form-group">
+                <label>Identifiant</label>
 
-</form>
+                <input
+                    class="form-control"
+                    type="text"
+                    name="login"
+                    required>
+            </div>
 
-<p style="color:red">
-    <?= $message ?>
-</p>
+            <div class="form-group">
+                <label>Mot de passe</label>
+
+                <input
+                    class="form-control"
+                    type="password"
+                    name="motdepasse"
+                    required>
+            </div>
+
+            <?php if(!empty($message)) : ?>
+
+                <div class="error-message">
+                    <?= $message ?>
+                </div>
+
+            <?php endif; ?>
+
+            <button class="btn" type="submit">
+                Se connecter
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+<?php include 'includes/footer.php'; ?>

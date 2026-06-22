@@ -141,3 +141,257 @@ body{
 .btn-add{
     background:#16a34a;
 }
+.error-message{
+    background:#fee2e2;
+    color:#b91c1c;
+    border:1px solid #fecaca;
+    padding:12px;
+    border-radius:6px;
+    margin-bottom:15px;
+    text-align:center;
+}
+.page-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:20px;
+    padding:10px 0;
+}
+
+.page-header h2{
+    margin:0;
+}
+body{
+    margin:0;
+    font-family:Segoe UI, Arial;
+    background:#f4f6f9;
+}
+
+/* TOP BAR */
+.topbar{
+    background:#1f2937;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 25px;
+    position:sticky;
+    top:0;
+}
+
+.logo{
+    font-size:18px;
+    font-weight:bold;
+}
+
+.menu a{
+    color:white;
+    text-decoration:none;
+    margin-left:15px;
+    padding:8px 12px;
+    border-radius:6px;
+    transition:0.2s;
+}
+
+.menu a:hover{
+    background:#374151;
+}
+
+/* LOGOUT BUTTON */
+.logout{
+    background:#dc2626;
+}
+
+.logout:hover{
+    background:#b91c1c;
+}
+
+/* CONTAINER */
+.container{
+    max-width:1100px;
+    margin:30px auto;
+}
+
+/* TITRE + ACTION */
+.page-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:20px;
+}
+
+.page-header h2{
+    margin:0;
+}
+
+/* BUTTONS */
+.btn{
+    padding:10px 15px;
+    border-radius:6px;
+    text-decoration:none;
+    color:white;
+    display:inline-block;
+    transition:0.2s;
+}
+
+.btn:hover{
+    transform:scale(1.03);
+}
+
+.btn-add{
+    background:#16a34a;
+}
+
+.btn-add:hover{
+    background:#15803d;
+}
+
+/* TABLE */
+.table{
+    width:100%;
+    border-collapse:collapse;
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+}
+
+.table th{
+    background:#1f2937;
+    color:white;
+    padding:12px;
+    text-align:left;
+}
+
+.table td{
+    padding:12px;
+    border-bottom:1px solid #e5e7eb;
+}
+
+/* ACTION BUTTONS */
+.btn-small{
+    padding:6px 10px;
+    border-radius:5px;
+    color:white;
+    text-decoration:none;
+    margin-right:5px;
+}
+
+.btn-edit{
+    background:#f59e0b;
+}
+
+.btn-edit:hover{
+    background:#d97706;
+}
+
+.btn-delete{
+    background:#dc2626;
+}
+
+.btn-delete:hover{
+    background:#b91c1c;
+}
+
+/* FOOTER */
+.footer{
+    text-align:center;
+    padding:20px;
+    color:#6b7280;
+    margin-top:40px;
+}
+.form-container{
+    display:flex;
+    justify-content:center;
+}
+
+.form-box{
+    background:white;
+    padding:30px;
+    width:500px;
+    border-radius:10px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+}
+
+.form-box h2{
+    margin-bottom:20px;
+}
+
+.form-box label{
+    display:block;
+    margin-top:10px;
+    margin-bottom:5px;
+    font-weight:500;
+}
+
+.form-control{
+    width:100%;
+    padding:10px;
+    border:1px solid #d1d5db;
+    border-radius:6px;
+    outline:none;
+}
+
+.form-control:focus{
+    border-color:#2563eb;
+}
+.form-box a.btn{
+    display:inline-block;
+    margin-left:10px;
+    text-decoration:none;
+    text-align:center;
+}
+.search-bar{
+    display:flex;
+    gap:10px;
+    margin-bottom:20px;
+    flex-wrap:wrap;
+}
+
+.search-bar input{
+    flex:1;
+    padding:10px;
+    border:1px solid #d1d5db;
+    border-radius:6px;
+    min-width:250px;
+}
+
+.search-bar button,
+.search-bar a{
+    padding:10px 15px;
+    border-radius:6px;
+    text-decoration:none;
+    color:white;
+    border:none;
+    cursor:pointer;
+}
+.btn-center{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+/* bouton rechercher */
+.btn-search{
+    background:#2563eb;
+}
+
+.btn-search:hover{
+    background:#1d4ed8;
+}
+
+/* bouton effacer */
+.btn-reset{
+    background:#6b7280;
+}
+
+.btn-reset:hover{
+    background:#4b5563;
+}
+
+/* alignement propre */
+.search-bar a,
+.search-bar button{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:6px;
+}
