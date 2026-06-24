@@ -395,3 +395,20 @@ body{
     justify-content:center;
     gap:6px;
 }
+.meteo{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    color:white;
+    font-size:14px;
+    margin-right:20px;
+}
+
+.meteo img{
+    width:30px;
+    height:30px;
+}
+.meteo .ville{
+    font-weight:bold;
+    margin-right:8px;
+}

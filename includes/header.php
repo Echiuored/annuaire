@@ -1,3 +1,5 @@
+<?php include 'includes/meteo.php'; ?>
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -15,6 +17,17 @@
 
     <div class="logo">
         📇 Annuaire RH
+    </div>
+    <div class="meteo">
+    <span class="ville">
+        <?= $villeAffichee ?>
+    </span>
+
+    <img src="https://openweathermap.org/img/wn/<?= $icone ?>.png">
+
+    <span>
+        <?= $temperature ?>°C - <?= $description ?>
+    </span>
     </div>
 
     <nav class="menu">

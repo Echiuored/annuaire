@@ -58,9 +58,13 @@ include 'includes/header.php';
 
     <h2>Liste du personnel</h2>
     <br>
- 
+ </div>
+ <div class="page-header">
     <a class="btn btn-add" href="ajouter.php">
         + Ajouter un personnel
+    </a>
+    <a class="btn btn-add" href="export_pdf.php">
+     📄 Export PDF
     </a>
 
 </div>
