@@ -66,6 +66,9 @@ include 'includes/header.php';
     <a class="btn btn-add" href="export_pdf.php">
      📄 Export PDF
     </a>
+    <a href="statistiques.php" class="btn btn-add">
+    📊 Statistiques
+    </a>
 
 </div>
 

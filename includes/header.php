@@ -1,5 +1,5 @@
 <?php include 'includes/meteo.php'; ?>
-
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <!DOCTYPE html>
 <html lang="fr">
 
